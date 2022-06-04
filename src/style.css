@@ -1,0 +1,87 @@
+/* initialisation  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 20px;
+  width: 500px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+button {
+  /* width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 5px; */
+  padding: 5px 15px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+form input {
+  padding: 8px 15px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+form input {
+  flex: 1;
+  margin-right: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  /* margin-top: 15px; */
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+li p {
+  flex: 1;
+}
+
+li .todo {
+  flex: 0 0 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+ul input {
+  flex: 1;
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+li .todo.done {
+  background-color: #333;
+}
