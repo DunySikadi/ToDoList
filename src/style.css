@@ -1,87 +1,87 @@
-/* initialisation  */
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: 0;
 }
 
 body {
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-  border: 1px solid #eee;
+  width: 500px;
   display: flex;
   flex-direction: column;
-  border-radius: 3px;
-  padding: 20px;
-  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  padding: 1rem;
 }
 
 form {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5rem;
 }
 
 button {
-  /* width: 80px;
-  height: 30px;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background-color: #2ecc71;
   border: none;
   border-radius: 3px;
-  margin-left: 5px; */
-  padding: 5px 15px;
-  border: 0px;
-  border-radius: 5px;
+}
+
+button:hover {
   cursor: pointer;
-  margin: 0 3px;
-}
-
-form input {
-  padding: 8px 15px;
-  outline: none;
-  border-radius: 3px;
-  border: 1px solid #ddd;
-}
-
-form input {
-  flex: 1;
-  margin-right: 15px;
 }
 
 ul {
-  list-style: none;
+  overflow: auto;
+  width: 100%;
 }
 
 li {
-  /* margin-top: 15px; */
-  align-items: center;
   display: flex;
-  margin-bottom: 10px;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
 }
 
 li p {
   flex: 1;
 }
 
-li .todo {
-  flex: 0 0 20px;
+li:hover {
+  cursor: pointer;
+  background: lightblue;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.todo {
+  width: 20px;
   height: 20px;
-  border: 1px solid #333;
-  border-radius: 30px;
-  margin-right: 15px;
-}
-
-ul input {
-  flex: 1;
-  padding: 5px 15px;
-  outline: none;
-  border-radius: 3px;
+  border-radius: 50px;
   border: 1px solid #ddd;
+  margin-right: 1rem;
 }
 
-li .todo.done {
-  background-color: #333;
+.done {
+  background-color: black;
+}
+
+.scratch {
+  text-decoration: line-through;
 }
